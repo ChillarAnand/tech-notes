@@ -3,22 +3,31 @@
     <title>notes.avilpage.com</title>
     <link href="https://ChillarAnand.github.io/tech-notes/feed.xml" rel="self" />
     <link href="https://ChillarAnand.github.io/tech-notes" />
-    <updated>2020-02-04T20:45:48+05:30</updated>
+    <updated>2020-02-04T21:03:59+05:30</updated>
     <author>
         <name>Chillar Anand</name>
     </author>
     <id>https://ChillarAnand.github.io/tech-notes</id>
 
     <entry>
-        <title>Fortinet SSL VPN Client Setup On CLI</title>
+        <title>Connecting To Forticlient VPN From CLI</title>
         <author>
             <name>Chillar Anand</name>
         </author>
         <link href="https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html"/>
         <id>https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html</id>
 
-        <updated>2020-02-04T20:34:51+05:30</updated>
-            <summary></summary>
-        <content></content>
+        <updated>2020-02-04T21:03:45+05:30</updated>
+            <summary>
+                <![CDATA[
+                    Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. </p>
+<p> </p>
+            ]]>
+        </content>
     </entry>
 </feed>

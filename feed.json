@@ -12,14 +12,16 @@
         {
             "id": "https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html",
             "url": "https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html",
-            "title": "Fortinet SSL VPN Client Setup On CLI",
+            "title": "Connecting To Forticlient VPN From CLI",
+            "summary": "Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. ",
+            "content_html": "<p>Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. </p>\n<p> </p>",
             "author": {
                 "name": "Chillar Anand"
             },
             "tags": [
             ],
             "date_published": "2020-02-04T20:17:18+05:30",
-            "date_modified": "2020-02-04T20:34:51+05:30"
+            "date_modified": "2020-02-04T21:03:45+05:30"
         }
     ]
 }
