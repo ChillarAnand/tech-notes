@@ -12,16 +12,16 @@
         {
             "id": "https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html",
             "url": "https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html",
-            "title": "Connecting To Forticlient VPN From CLI",
-            "summary": "Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. ",
-            "content_html": "<p>Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. </p>\n<p> </p>",
+            "title": "Connecting To Fortinet VPN From CLI",
+            "summary": "Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. However these is openfortivpn, an open source client client for PPP+SSL VPN tunnel services which is compatible with Fortinet VPNs. This is available for all Linux &amp; Mac machines.",
+            "content_html": "<p>Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. </p>\n<p>However these is <a href=\"https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html\" target=\"_blank\" rel=\"noopener noreferrer\">openfortivpn</a>, an open source client client for PPP+SSL VPN tunnel services which is compatible with Fortinet VPNs. This is available for all Linux &amp; Mac machines. </p>\n<p>Install openfortivpn with the OS package manager.</p>\n<pre><code>$ sudo apt install openfortivpn # for Ubuntu</code><br><code>$ brew install openfortivpn  # for Mac </code> </pre>\n<p>Create a config file(vpn.ini) for VPN as follows with VPN credentials.</p>\n<pre><code>host = vpn-gateway-address\nport = 443\nusername = vpn-username\npassword = vpn-password</code></pre>\n<p> Start the CLI client with the following command.</p>\n<pre><code>$ sudo openfortivpn -c vpn.ini</code><br><code>INFO: Tunnel is up and running.</code></pre>\n<p>For more options, check out openfortivpn docs.</p>",
             "author": {
                 "name": "Chillar Anand"
             },
             "tags": [
             ],
             "date_published": "2020-02-04T20:17:18+05:30",
-            "date_modified": "2020-02-04T21:03:45+05:30"
+            "date_modified": "2020-02-04T21:22:56+05:30"
         }
     ]
 }

@@ -3,30 +3,40 @@
     <title>notes.avilpage.com</title>
     <link href="https://ChillarAnand.github.io/tech-notes/feed.xml" rel="self" />
     <link href="https://ChillarAnand.github.io/tech-notes" />
-    <updated>2020-02-04T21:03:59+05:30</updated>
+    <updated>2020-02-04T21:23:29+05:30</updated>
     <author>
         <name>Chillar Anand</name>
     </author>
     <id>https://ChillarAnand.github.io/tech-notes</id>
 
     <entry>
-        <title>Connecting To Forticlient VPN From CLI</title>
+        <title>Connecting To Fortinet VPN From CLI</title>
         <author>
             <name>Chillar Anand</name>
         </author>
         <link href="https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html"/>
         <id>https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html</id>
 
-        <updated>2020-02-04T21:03:45+05:30</updated>
+        <updated>2020-02-04T21:22:56+05:30</updated>
             <summary>
                 <![CDATA[
-                    Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. 
+                    Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. However these is openfortivpn, an open source client client for PPP+SSL VPN tunnel services which is compatible with Fortinet VPNs. This is available for all Linux &amp; Mac machines.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>Forticlient VPN provides a GUI client for Ubuntu, Mac &amp; Windows. However these cannot be installed on servers where GUI is not available. </p>
-<p> </p>
+<p>However these is <a href="https://ChillarAnand.github.io/tech-notes/fortinet-ssl-vpn-client-setup-on-cli.html" target="_blank" rel="noopener noreferrer">openfortivpn</a>, an open source client client for PPP+SSL VPN tunnel services which is compatible with Fortinet VPNs. This is available for all Linux &amp; Mac machines. </p>
+<p>Install openfortivpn with the OS package manager.</p>
+<pre><code>$ sudo apt install openfortivpn # for Ubuntu</code><br><code>$ brew install openfortivpn  # for Mac </code> </pre>
+<p>Create a config file(vpn.ini) for VPN as follows with VPN credentials.</p>
+<pre><code>host = vpn-gateway-address
+port = 443
+username = vpn-username
+password = vpn-password</code></pre>
+<p> Start the CLI client with the following command.</p>
+<pre><code>$ sudo openfortivpn -c vpn.ini</code><br><code>INFO: Tunnel is up and running.</code></pre>
+<p>For more options, check out openfortivpn docs.</p>
             ]]>
         </content>
     </entry>
